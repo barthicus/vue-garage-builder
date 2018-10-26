@@ -1,7 +1,8 @@
 # garage-builder
-Simple garage builder based on vue.js and three where you can adjust width and length of construction.
-There is also option to change the number of garage gates. 
+Simple garage builder based on vue.js and three where you can adjust width and length of construction.  
+There is also option to change the number of garage gates.  
 App skeleton was created with [vue-cli 3].
+
 Demo online: [barthicus.github.io/garage-builder]
 
 #### Table of Contents
@@ -19,9 +20,9 @@ Demo online: [barthicus.github.io/garage-builder]
 ## The most important files
 
 ### src/libs/GarageBuilder.js
-It is builder class that create garage model, perforates sheet and positions/merge every parts together. 
-Every "builder" method return Object3D instance (from three.js) so library can be used in other JS frameworks.
-TODO: Class probably should be refactored to subbuilder classes where everyone build own part.
+It is builder class that create garage model, perforates sheet and positions/merge every parts together.  
+Every "builder" method return Object3D instance (from three.js) so library can be used in other JS frameworks.  
+> TODO: Class probably should be refactored to subbuilder classes where everyone build own part.
 
 ### component/Preview.vue
 Vue component that renders 3D garage preview.
