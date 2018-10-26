@@ -2,7 +2,7 @@
 Simple garage builder based on vue.js and three where you can adjust width and length of construction.
 There is also option to change the number of garage gates. 
 App skeleton was created with [vue-cli 3].
-Demo online: [link]
+Demo online: [barthicus.github.io/garage-builder]
 
 #### Table of Contents
 - [Tools used](#tools-used)
@@ -25,6 +25,10 @@ TODO: Class probably should be refactored to subbuilder classes where everyone b
 
 ### component/Preview.vue
 Vue component that renders 3D garage preview.
+
+### component/SceneHelpers.vue
+Optional vue component that helps with lightining settings.
+It isn't required but it was really helpful to adjust all parameters (ambient, fog, spotlight etc.).
 
 ## Real app usage
 The full featured version of this app is deployed on [Taurustal] website.
@@ -52,4 +56,4 @@ npm run build
 
 [vue-cli 3]: <https://cli.vuejs.org>
 [Taurustal]: <http://taurustal.com/konfigurator>
-[link]: <https://link>
+[barthicus.github.io/garage-builder]: <https://barthicus.github.io/garage-builder>
