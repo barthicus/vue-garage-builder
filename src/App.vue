@@ -1,26 +1,29 @@
 <template>
-  <div class="main container">
-    <nav class="main__nav menu">
-      <h2 class="menu-label">{{ $t('Opcje do wyboru') }}:</h2>
-      <ul class="menu-list">
-        <li>
-          <a href="" :class="{'is-active': currentSection === 'Dimensions'}" @click.prevent="selectSection('Dimensions')">{{ $t('szerokość i długość') }}</a>
-        </li>
-        <li>
-          <a href="" :class="{'is-active': currentSection === 'Gates'}" @click.prevent="selectSection('Gates')">{{ $t('bramy') }}</a>
-        </li>
-      </ul>
-      <div class="main__bottomnav level">
-        <div class="level-left">
-          <button class="button is-small" @click="selectPrevSection" :disabled="isPrevBtnDisabled">← {{ $t('Poprzedni') }}</button>
+  <div class="container">
+    <h1 class="title">Vue.js Garage Builder</h1>
+    <div class="main">
+      <nav class="main__nav menu">
+        <h2 class="menu-label">{{ $t('Opcje do wyboru') }}:</h2>
+        <ul class="menu-list">
+          <li>
+            <a href="" :class="{'is-active': currentSection === 'Dimensions'}" @click.prevent="selectSection('Dimensions')">{{ $t('szerokość i długość') }}</a>
+          </li>
+          <li>
+            <a href="" :class="{'is-active': currentSection === 'Gates'}" @click.prevent="selectSection('Gates')">{{ $t('bramy') }}</a>
+          </li>
+        </ul>
+        <div class="main__bottomnav level">
+          <div class="level-left">
+            <button class="button is-small" @click="selectPrevSection" :disabled="isPrevBtnDisabled">← {{ $t('Poprzedni') }}</button>
+          </div>
+          <div class="level-right">
+            <button class="button is-small" @click="selectNextSection" :disabled="isNextBtnDisabled">{{ $t('Następny') }} →</button>
+          </div>
         </div>
-        <div class="level-right">
-          <button class="button is-small" @click="selectNextSection" :disabled="isNextBtnDisabled">{{ $t('Następny') }} →</button>
-        </div>
-      </div>
-    </nav>
-    <component :is="currentSection" class="main__form"></component>
-    <Preview class="main__preview"/>
+      </nav>
+      <component :is="currentSection" class="main__form"></component>
+      <Preview class="main__preview"/>
+    </div>
   </div>
 </template>
 
@@ -59,6 +62,9 @@ export default {
 </script>
 
 <style lang="scss">
+.title {
+  margin-top: 20px;
+}
 .main {
   display: flex;
   justify-content: space-between;
