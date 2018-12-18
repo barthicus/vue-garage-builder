@@ -5,7 +5,7 @@ Simple garage builder based on vue.js and three where you can adjust width and l
 There is also option to change the number of garage gates.  
 App skeleton was created with [vue-cli 3].
 
-Demo online: [barthicus.github.io/garage-builder]
+Demo online: [barthicus.github.io/vue-garage-builder]
 
 #### Table of Contents
 - [Tools used](#tools-used)
@@ -60,4 +60,4 @@ npm run build
 [github.com/barthicus/react-garage-builder]: <https://github.com/barthicus/react-garage-builder>
 [vue-cli 3]: <https://cli.vuejs.org>
 [Taurustal]: <http://taurustal.com/konfigurator>
-[barthicus.github.io/garage-builder]: <https://barthicus.github.io/garage-builder>
+[barthicus.github.io/vue-garage-builder]: <https://barthicus.github.io/vue-garage-builder>
