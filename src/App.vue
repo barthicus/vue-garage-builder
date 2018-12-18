@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <h1 class="title">Vue.js Garage Builder</h1>
+    <p class="subtitle">Repo for this project can be found <a href="https://github.com/barthicus/vue-garage-builder">here</a>.</p>
     <div class="main">
       <nav class="main__nav menu">
         <h2 class="menu-label">{{ $t('Opcje do wyboru') }}:</h2>
