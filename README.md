@@ -1,4 +1,6 @@
-# garage-builder
+# 3D garage builder in Vue.js
+[![Build Status](https://travis-ci.org/barthicus/vue-garage-builder.svg?branch=master)](https://travis-ci.org/barthicus/vue-garage-builder)
+
 > You can also check version created in React here: [github.com/barthicus/react-garage-builder].
 
 Simple garage builder based on vue.js and three where you can adjust width and length of construction.  
